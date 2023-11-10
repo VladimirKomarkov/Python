@@ -51,7 +51,6 @@ def get_shops(publisher_name_or_id):
         for title, shop_name, price, date_sale in publisher_query:
                 print(f"{title: <40} | {shop_name: <10} | {price: <8} | {date_sale.strftime('%d-%m-%y')}")
 
-
 if __name__ == "__main__":
     publisher_input = input("Введите имя или идентификатор издателя: ")
     get_shops(publisher_input)
